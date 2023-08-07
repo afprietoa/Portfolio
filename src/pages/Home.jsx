@@ -81,17 +81,12 @@ const Home = () => {
                   <div className="underline"></div>
                 </div>
                 {/* end of section title */}
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                  Quam vero dolores nobis molestiae inventore rem consequatur. 
-                  Sequi, amet laborum quos voluptas eius at in perferendis 
-                  quisquam aliquam fuga aspernatur id qui provident illum temporibus 
-                  soluta tempore. Amet incidunt asperiores vel.
+                <p>Web developer with experience in creating interactive and modern
+                   user interfaces. Capable of building REST APIs using relational or
+                    non-relational databases and conducting unit testing.
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                  Quam vero dolores nobis molestiae inventore rem consequatur. 
-                  Sequi, amet laborum quos voluptas eius at in perferendis 
-                  quisquam aliquam fuga aspernatur id qui provident illum temporibus 
-                  soluta tempore. Amet incidunt asperiores vel.
+                <p>Also possesses social skills such as proactivity, assertive communication,
+                     and teamwork.
                 </p>
                 <a href="" className="btn" onClick={() => {navigate("/about")}}>
                   about me
