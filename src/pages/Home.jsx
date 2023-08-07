@@ -1,7 +1,7 @@
 import React from 'react'
 import { Footer, Navbar, Sidebar } from '../components'
 import Hero from '../assets/images/heroImg.png'
-import Avatar from '../assets/images/hero-img-small.jpeg'
+import Avatar from '../assets/images/hero-img-small.jpg'
 import About from '../assets/images/aboutImg.png'
 import Project1 from '../assets/images/project-1.jpg'
 import Project2 from '../assets/images/project-2.jpg'
