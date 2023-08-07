@@ -197,11 +197,8 @@ Connect
     width: 100%;
     height: 100%;
      background: #2caeba; 
-    opacity: 0.38;
+    opacity: 0;
     z-index: -1;
-    &:hover{
-      opacity: 0;
-    }
   }
 }
 .video-container{
