@@ -1,9 +1,9 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/Projects'
-import Project1 from '../assets/images/project-1.jpeg'
-import Project2 from '../assets/images/project-2.jpeg'
-import Project3 from '../assets/images/project-3.jpeg'
-import Project4 from '../assets/images/project-4.jpeg'
+import Project1 from '../assets/images/project-1.jpg'
+import Project2 from '../assets/images/project-2.jpg'
+import Project3 from '../assets/images/project-3.jpg'
+import Project4 from '../assets/images/project-4.jpg'
 import { Footer, Navbar, Sidebar } from '../components'
 const Projects = () => {
   return (

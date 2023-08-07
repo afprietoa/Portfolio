@@ -20,13 +20,12 @@ const About = () => {
           <div className="section-center page-info">
           {/* about page */}
           <p>
-            Hello, I am John Doe and I am a web developer. I live and work in
-            somewhere warm. I spend most of my day, experimenting with HTML, CSS
-            and JavaScript (and its endless list of frameworks). I enjoy coding
-            and the challenge of learning something new everyday. You can also
-            find me at youtube channel
-            <a href="https://www.youtube.com/channel/UCMZFwxv5l-XtKi693qMJptA"
-              >coding addict</a
+          Hello, I am Andres Prieto and I am a Computer Systems Engineer and Web Developer. 
+          I live and work in Bogotá. I spend most of my day, developing with HTML, 
+          CSS, JavaScript, Java y Python (and its endless list of frameworks). 
+          I enjoy coding and the challenge of learning something new every day. 
+            <a href="https://www.linkedin.com/in/afelipeprietoa/"
+              > More About Me </a
             >
           </p>
           </div>

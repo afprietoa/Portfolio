@@ -21,11 +21,11 @@ const Contact = () => {
         {/* contact page */}
         <p>
           If you are looking to get ahold of me, you can send me an email at
-          <a href="mailto:email@email.com">@your_email</a>
+          <a href="mailto:afprietoa@unal.edu.co"> @afprietoa</a>
         </p>
         <p>
-          You can also reach me on Twitter at
-          <a href="https://www.twitter.com">@your_social_media </a>
+          You can also reach me on GitHub at
+          <a href="https://github.com/afprietoa"> @afprietoa </a>
         </p>
       </div>
     </section>
