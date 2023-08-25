@@ -155,7 +155,7 @@ const Home = () => {
         {/* end of section title */}
         <div className="section-center projects-center">
           {/* single project */}
-          <a href="" className="project-1" onClick={() => {navigate("/projects")}}>
+          <a href="#" className="project-1" onClick={() => {navigate("/projects")}}>
           <article className="project">
             <img src={Project1} alt="single project" className='project-img'/>
             <div className="project-info">
@@ -166,7 +166,7 @@ const Home = () => {
           </a>
           {/* end of single project */}
           {/* single project */}
-        <a href="" className="project-2" onClick={() => {navigate("/projects")}}>
+        <a href="#" className="project-2" onClick={() => {navigate("/projects")}}>
           <article className="project">
             <img src={Project2} alt="single project" className='project-img'/>
             <div className="project-info">
@@ -177,7 +177,7 @@ const Home = () => {
           </a>
           {/* end of single project */}
           {/* single project */}
-         <a href="" className="project-3" onClick={() => {navigate("/projects")}}>
+         <a href="#" className="project-3" onClick={() => {navigate("/projects")}}>
           <article className="project">
             <img src={Project3} alt="single project" className='project-img'/>
             <div className="project-info">
@@ -188,7 +188,7 @@ const Home = () => {
           </a>
           {/* end of single project */}
          {/* single project */}
-         <a href="" className="project-4" onClick={() => {navigate("/projects")}}>
+         <a href="#" className="project-4" onClick={() => {navigate("/projects")}}>
           <article className="project">
             <img src={Project4} alt="single project" className='project-img'/>
             <div className="project-info">
