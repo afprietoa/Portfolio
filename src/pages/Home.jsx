@@ -12,9 +12,76 @@ import Blog2 from '../assets/images/blog-2.jpg'
 import Blog3 from '../assets/images/blog-3.jpg'
 import Blog4 from '../assets/images/blog-4.jpg'
 import Connect  from '../assets/videos/space.mp4'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/Home'
+
+const projects = [
+  {
+    image: "https://getwallpapers.com/wallpaper/full/c/f/1/490921.jpg",
+    title: "ANGULAR PROJECT",
+    description: "I'm baby salvia lomo yuccie, vinyl seitan XOXO tousled bicycle rights slow-carb occupy taiyaki microdosing brunch. Photo booth slow-carb health goth kickstarter cardigan. Roof party pour-over swag pork belly glossier DIY farm-to-table godard locavore. Chicharrones gastropub slow-carb food truck tumblr semiotics, heirloom ugh wolf unicorn thundercats health goth.",
+    stacks: ["ANGULAR", "FIREBASE"],
+    github: "#",
+    url: "#"
+  },
+  {
+    image: "https://getwallpapers.com/wallpaper/full/f/3/d/489195.jpg",
+    title: "REACT PROJECT",
+    description: "Tumblr intelligentsia brunch, heirloom crucifix tousled butcher poke fanny pack lumbersexual forage. Keytar portland lyft mixtape fixie tofu vice blue bottle. Ethical waistcoat flannel vape banjo you probably haven't heard of them mlkshk, mumblecore umami fam slow-carb. Shaman fashion axe mlkshk bitters quinoa cornhole pok pok pabst cray cronut snackwave dreamcatcher you probably haven't heard of them.",
+    stacks: ["REACT", "REDUX"],
+    github: "#",
+    url: "#"
+  },
+  {
+    image: "https://getwallpapers.com/wallpaper/full/e/a/b/489560.jpg",
+    title: "GATSBY PROJECT",
+    description: "Vaporware YOLO kinfolk iceland. Tbh swag fashion axe brooklyn literally +1 shoreditch. Letterpress heirloom ethical gluten-free disrupt. VHS post-ironic godard, tumeric ugh next level farm-to-table tilde. Jean shorts next level sartorial, health goth poutine offal flexitarian pour-over messenger bag.",
+    stacks: ["GATSBY", "STRAPI"],
+    github: "#",
+    url: "#"
+  }
+];
+
+
+const jobs = [
+  {
+    company: "Tommy",
+    position: "Full Stack Web Developer",
+    date: "December 2015 - Present",
+    desc: [
+      "Tote bag sartorial mlkshk air plant vinyl banjo lumbersexual poke leggings offal cold-pressed brunch neutra. Hammock photo booth live-edge disrupt.",
+      "Post-ironic selvage chambray sartorial freegan meditation. Chambray chartreuse kombucha meditation, man bun four dollar toast street art cloud bread live-edge heirloom.",
+      "Butcher drinking vinegar franzen authentic messenger bag copper mug food truck taxidermy. Mumblecore lomo echo park readymade iPhone migas single-origin coffee franzen cloud bread tilde vegan flexitarian."
+    ]
+  },
+  {
+    company: "BigDrop",
+    position: "Front-End Engineer",
+    date: "May 2015 - December 2015",
+    desc: [
+      "Hashtag drinking vinegar scenester mumblecore snackwave four dollar toast, lumbersexual XOXO. Cardigan church-key pabst, biodiesel vexillologist viral squid.",
+      "Franzen af pitchfork, mumblecore try-hard kogi XOXO roof party la croix cardigan neutra retro tattooed copper mug. Meditation lomo biodiesel scenester",
+      "Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1",
+      "Polaroid succulents tumeric before they sold out taiyaki master cleanse neutra. Hammock photo booth live-edge disrupt."
+    ]
+  },
+  {
+    company: "Cuker",
+    position: "Engineering Intern",
+    date: "May 2014 - September 2015",
+    desc: [
+      "Bushwick jianbing humblebrag chicharrones truffaut, ramps williamsburg.",
+      "Farm-to-table quinoa man bun, 90's mlkshk blue bottle wayfarers everyday carry heirloom asymmetrical swag pok pok.",
+      "Mixtape church-key synth, whatever pickled prism migas green juice iPhone vaporware pour-over fam chia craft beer.",
+      "Prism tumblr freegan cloud bread squid palo santo, disrupt twee."
+    ]
+  }
+];
 const Home = () => {
+
+  const [value, setValue] = React.useState(0);
+  const { company, position, date, desc } = jobs[value];
+
   const navigate = useNavigate();
   return (
     <Wrapper>
@@ -29,7 +96,7 @@ const Home = () => {
           <div className="section-center hero-center">
             <article className="hero-info">
               <div className="underline"></div>
-              <h1>i'm Andres P.</h1>
+              <h1>Innova<span className="hero-title-mod">TIC</span></h1>
               <h4>freelance web & mobile UI/UX Designer</h4>
               <a href="" className="btn hero-btn" onClick={() => {navigate("/contact")}}>
                 Hire me
@@ -69,6 +136,61 @@ const Home = () => {
           </div>
         </div>
         {/* end of header */}
+
+
+    {/* skills section */}
+    <section class="skills clearfix">
+      {/* single skill */}
+      <article class="skill">
+        <span class="skill-icon">
+        <i class="devicon-react-original"></i>
+        </span>
+        <h4 class="skill-title">React</h4>
+        <p class="skill-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+          rerum?
+        </p>
+      </article>
+      {/* end of single skill */}
+      {/* single skill */}
+      <article class="skill">
+        <span class="skill-icon">
+        <i class="devicon-angular-plain"></i>
+        </span>
+        <h4 class="skill-title">Angular</h4>
+        <p class="skill-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+          rerum?
+        </p>
+      </article>
+      {/* end of single skill */}
+      {/* single skill */}
+      <article class="skill">
+        <span class="skill-icon">      
+        <i class="devicon-spring-original"></i>
+        </span>
+        <h4 class="skill-title">Spring</h4>
+        <p class="skill-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+          rerum?
+        </p>
+      </article>
+      {/* end of single skill */}
+      {/* single skill */}
+      <article class="skill">
+        <span class="skill-icon">             
+        <i class="devicon-dot-net-plain"></i>
+        </span>
+        <h4 class="skill-title">ASP.NET</h4>
+        <p class="skill-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+          rerum?
+        </p>
+      </article>
+      {/* end of single skill */}
+    </section>
+    {/* end of skills section */}
+
         {/* about */}
         <section className='section about'>
           <div className="section-center about-center">
@@ -100,215 +222,238 @@ const Home = () => {
           </div>
         </section>
         {/* end of about */}
-        {/* services */}
-        <section className="section bg-grey">
-                {/* section title */}
-                <div className="section-title">
-                  <h2>Services</h2>
-                  <div className="underline"></div>
-                </div>
-                {/* end of section title */}
-                <div className="services-center section-center">
-                   {/* services */}
-                  <article className="service">
+
+
+    {/* products */}
+    <section class="products">
+      <div class="section-center clearfix">
+        {/* products info */}
+        <article class="products-info">
+          {/* section title */}
+          <div class="section-title">
+            <h3>check out</h3>
+            <h2>our Services</h2>
+            <div className="underline"></div>
+          </div>
+          {/* end of section title */}
+          <p class="product-text">
+          We offer tailored digital services including responsive website development that aligns with your goals, modern UI design for enhanced user experience, and mobile app development integrated with external platforms and data management to meet user needs effectively.
+          </p>
+          <a href="products.html" class="btn">inventory</a>
+        </article>
+        {/* products inventory */}
+        <article class="products-inventory clearfix">
+          {/* single product */}
+          <div class="product">
+          <article className="service">
                     <i className='fas fa-code service-icon'></i>
                     <h4>web development</h4>
                     <div className="underline"></div>
-                    <p>
-                    Development of websites from the ground up that mirror the objectives and needs, ensuring they are responsive and compatible across mobile devices. 
-                    </p>
-                  </article>
-                  {/* end of services */}
-                                     {/* services */}
-                                     <article className="service">
+            </article>
+            <h4 class="product-title">+10 websites</h4>
+          </div>
+          {/* end of single product */}
+          {/* single product */}
+          <div class="product">
+          <article className="service">
                     <i className='fab fa-sketch service-icon'></i>
                     <h4>UX/UI desgin</h4>
                     <div className="underline"></div>
-                    <p>
-                    Design of modern and visually appealing user interfaces (UI) that capture the essence of the personal brand, optimizing the user experience (UX) for intuitive navigation
-                    </p>
-                  </article>
-                  {/* end of services */}
-                                     {/* services */}
-                                     <article className="service">
+            </article>
+            <h4 class="product-title">+5 designs</h4>
+          </div>
+          {/* end of single product */}
+          {/* single product */}
+          <div class="product">
+          <article className="service">
                     <i className='fab fa-android service-icon'></i>
                     <h4>Mobile Development</h4>
                     <div className="underline"></div>
-                    <p>
-                    Development of mobile apps integrating external platforms and working under a data management methodology in order to meet user requirements.
-                    </p>
                   </article>
-                  {/* end of services */}
-                </div>
-        </section> 
-        {/* end of services */}
+            <h4 class="product-title">+2 Apps</h4>
+          </div>
+          {/* end of single product */}
+                    {/* single product */}
+                    <div class="product">
+          <article className="service">
+                    <i className='fas fa-laptop service-icon'></i>
+                    <h4>Desktop Development</h4>
+                    <div className="underline"></div>
+                  </article>
+            <h4 class="product-title">+2 Softwares</h4>
+          </div>
+          {/* end of single product */}
+                    {/* single product */}
+                    <div class="product">
+          <article className="service">
+                    <i className='fab fa-pagelines service-icon'></i>
+                    <h4>Consultancy</h4>
+                    <div className="underline"></div>
+                  </article>
+            <h4 class="product-title">+1 Asesories</h4>
+          </div>
+          {/* end of single product */}
+                    {/* single product */}
+                    <div class="product">
+          <article className="service">
+                    <i className='fas fa-bug service-icon'></i>
+                    <h4>Support</h4>
+                    <div className="underline"></div>
+                  </article>
+            <h4 class="product-title">+1 Maintenances</h4>
+          </div>
+          {/* end of single product */}
+        </article>
+      </div>
+    </section>
+    {/* end of products */}
+
+
+    <section className="section jobs">
+      {/* section title */}
+      <div className="section-title">
+      <h2>Experience</h2>
+      <div className="underline">
+      </div>
+      </div>
+      {/* end of section title */}
+      <div className="jobs-center">
+        <div className="btn-container">
+          {jobs.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => setValue(index)}
+              className={`job-btn ${index === value ? "active-btn" : ""}`}
+            >
+              {item.company}
+            </button>
+          ))}
+        </div>
+        <article className="job-info">
+          <h3>{position}</h3>
+          <h4>{company}</h4>
+          <p className="job-date">{date}</p>
+          {desc.map((item, index) => (
+            <div key={index} className="job-desc">
+              <span class="job-icon">
+              <i class="fas fa-chevron-right"></i>
+              <i class="fas fa-chevron-right"></i>
+              </span>
+              
+              <p>{item}</p>
+            </div>
+          ))}
+        </article>
+      </div>
+    </section>
+
+
         {/* projects */}
         <section className="section projects">
-          {/* section-title */}
-          <div className="section-title">
+                    {/* section-title */}
+                    <div className="section-title">
             <h2>projects</h2>
             <div className="underline"></div>
               <p className="projects-text">
               The developed projects aim to provide technological solutions to challenges presented in various contexts. The creation of these projects was achieved utilizing diverse technologies such as React, Angular, Spring Boot, Django, among others.
               </p>       
           </div>
-        {/* end of section title */}
-        <div className="section-center projects-center">
-          {/* single project */}
-          <a href="#" className="project-1" onClick={() => {navigate("/projects")}}>
-          <article className="project">
-            <img src={Project1} alt="single project" className='project-img'/>
-            <div className="project-info">
-              <h4>WaBike</h4>
-              <p>GA</p>
-            </div>
-          </article>
-          </a>
-          {/* end of single project */}
-          {/* single project */}
-        <a href="#" className="project-2" onClick={() => {navigate("/projects")}}>
-          <article className="project">
-            <img src={Project2} alt="single project" className='project-img'/>
-            <div className="project-info">
-              <h4>Health App</h4>
-              <p>UNAL</p>
-            </div>
-          </article>
-          </a>
-          {/* end of single project */}
-          {/* single project */}
-         <a href="#" className="project-3" onClick={() => {navigate("/projects")}}>
-          <article className="project">
-            <img src={Project3} alt="single project" className='project-img'/>
-            <div className="project-info">
-              <h4>Hospital at Home</h4>
-              <p>UNAL</p>
-            </div>
-          </article>
-          </a>
-          {/* end of single project */}
-         {/* single project */}
-         <a href="#" className="project-4" onClick={() => {navigate("/projects")}}>
-          <article className="project">
-            <img src={Project4} alt="single project" className='project-img'/>
-            <div className="project-info">
-              <h4>Reading Essence</h4>
-              <p>UNAL</p>
-            </div>
-          </article>
-          </a>
-          {/* end of single project */}
+
+          <div className="section-center">
+          {projects.map((project, index) => (
+        <article className="project" key={index}>
+          
+        <div className="project-img-wrapper">
+            <img src={project.image} alt="Project Preview" className="project-img" />
         </div>
+          <div className="project-info">
+            <span className="project-number">0{index + 1}.</span>
+            <h3>{project.title}</h3>
+            <p className="project-desc">{project.description}</p>
+            <div className="project-stack">
+              {project.stacks.map((stack, index) => (
+                <span key={index}>{stack}</span>
+              ))}
+            </div>
+            <div className="project-links">
+              <a href={project.github}>
+                <i class="fab fa-github project-icon"></i>
+              </a>
+              <a href={project.url}>
+                <i class="fas fa-share-square project-icon"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+
+          </div>
+      <Link to="/projects" className="btn center-btn">
+        Projects
+      </Link>
+
         </section>
         {/* end of projects */}
+
+
         {/* connect */}
-        <section className="connect">
-          <video controls autoPlay muted loop className='video-container' poster={Project1}>
-             <source src={Connect} type="video/mp4"/> 
-            Sorry, your browser does not support embedded videos
-          </video>
-          <div className="video-banner">
-            {/* section title */}
-            <div className="section-title">
-              <h2>let's get in touch</h2>
-              <div className="underline">
-              </div>
-              </div>
-              {/* end of section title */}
-              <p className="video-text">
-              Don't hesitate to get in touch with me if you have any inquiries or would like to discuss your project. I'm enthusiastic about your thoughts and eager to see how we can work together. Whether you're considering a potential collaboration, embarking on a creative venture, or simply want to say hi, I'm here, and I'm eager to engage.
-              </p>
-              <a href="" className="btn" onClick={() => {navigate("/contact")}}>
-                contact me
-              </a>
-          </div>
-        </section>
-        {/* end of connect */}
-        {/* skills */}
-        <section className="section skills">
+        <section className="section connects">
           {/* section title */}
           <div className="section-title">
-                      <h2>skills</h2>
+                      <h2>other <span className='hero-title-mod'>services</span></h2>
                       <div className="underline">
                       </div>
                       </div>
-                      {/* end of section title */}
-                      <div className="section-center skills-center">
-                        <article>
-                          <h3>front end</h3>
-                          {/* single skill */}
-                          <div className="skill">
-                            <p>HTML/CSS</p>
-                            <div className="skill-container">
-                              <div className="skill-value"></div>
-                              <p className="skill-text">
-                                50%
-                              </p>
-                            </div>
-                          </div>
-                          {/* end of single skill */}
-                          {/* single skill */}
-                          <div className="skill">
-                            <p>JavaScript/ReactJs</p>
-                            <div className="skill-container">
-                              <div className="skill-value value-70"></div>
-                              <p className="skill-text skill-text-70">
-                                70%
-                              </p>
-                            </div>
-                          </div>
-                          {/* end of single skill */}
-                        {/* single skill */}
-                          <div className="skill">
-                            <p>TypeScript/Angular</p>
-                            <div className="skill-container">
-                              <div className="skill-value value-80"></div>
-                              <p className="skill-text skill-text-80">
-                                80%
-                              </p>
-                            </div>
-                          </div>
-                          {/* end of single skill */}
-                        </article>
-                        <article>
-                          <h3>back end</h3>
-                          {/* single skill */}
-                          <div className="skill">
-                            <p>Java/Spring</p>
-                            <div className="skill-container">
-                              <div className="skill-value"></div>
-                              <p className="skill-text">
-                                50%
-                              </p>
-                            </div>
-                          </div>
-                          {/* end of single skill */}
-                          {/* single skill */}
-                          <div className="skill">
-                            <p>Python/Django</p>
-                            <div className="skill-container">
-                              <div className="skill-value value-70"></div>
-                              <p className="skill-text skill-text-70">
-                                70%
-                              </p>
-                            </div>
-                          </div>
-                          {/* end of single skill */}
-                        {/* single skill */}
-                          <div className="skill">
-                            <p>MySQL/Mongo</p>
-                            <div className="skill-container">
-                              <div className="skill-value value-80"></div>
-                              <p className="skill-text skill-text-80">
-                                80%
-                              </p>
-                            </div>
-                          </div>
-                          {/* end of single skill */}
-                        </article>
-                      </div>
+        <div class="section-center connects-center">
+        {/* single connect */}
+        <article class="connect">
+          <span class="connect-icon">
+            <i class="fas fa-wallet fa-fw"></i>
+          </span>
+          <div class="connect-info">
+            <h4 class="connect-title">saving money</h4>
+            <p class="connect-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              cupiditate, tempore reiciendis sit ipsum consequatur!
+            </p>
+          </div>
+        </article>
+        {/* enf of single connect */}
+        {/* single connect */}
+        <article class="connect">
+          <span class="connect-icon">
+            <i class="fas fa-tree fa-fw"></i>
+          </span>
+          <div class="connect-info">
+            <h4 class="connect-title">endless biking</h4>
+            <p class="connect-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              cupiditate, tempore reiciendis sit ipsum consequatur!
+            </p>
+          </div>
+        </article>
+        {/* enf of single connect */}
+        {/* single connect */}
+        <article class="connect">
+          <span class="connect-icon">
+            <i class="fas fa-socks fa-fw"></i>
+          </span>
+          <div class="connect-info">
+            <h4 class="connect-title">amazing comfort</h4>
+            <p class="connect-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              cupiditate, tempore reiciendis sit ipsum consequatur!
+            </p>
+          </div>
+        </article>
+        {/* enf of single connect */}
+      </div>
+              <Link to="/contact" className="btn center-btn">
+                  More Info
+              </Link>
         </section>
         {/* end of skills */}
+
         {/* timeline */}
         <div className="section timeline">
                       {/* section title */}
@@ -382,6 +527,7 @@ const Home = () => {
                       </div>
         </div>
         {/*end of  timeline */}
+
         {/* blog */}
         <div className="section blog">
               {/* section title */}
@@ -397,12 +543,17 @@ const Home = () => {
                   {/* front of the card */}
                   <div className="card-side card-front">
                     <img src={Blog1} alt="blog-1" />
+
+                    <div className='blog-info'>
                     <h4>Angular Material Theming</h4>
                     <p>There are 4 pre-built themes that come with Angular Material: deeppurple-amber, indigo-pink, pink-bluegrey, purple-green</p>
                     <div className="card-footer">
                       <img src={Avatar} alt="avatar"/>
                       <p>7 min read</p>
                     </div>
+                    </div>
+
+
                   </div>
                   {/* card back */}
                   <div className="card-side card-back">
@@ -415,12 +566,16 @@ const Home = () => {
                   {/* front of the card */}
                   <div className="card-side card-front">
                     <img src={Blog2} alt="blog-2" />
+
+                    <div className='blog-info'>
                     <h4>Spring Security - JWT</h4>
                     <p>Spring Security + JWT Authentication define a compact and self-contained way for securely transmitting information. </p>
                     <div className="card-footer">
                       <img src={Avatar} alt="avatar"/>
                       <p>7 min read</p>
                     </div>
+                    </div>
+
                   </div>
                   {/* card back */}
                   <div className="card-side card-back">
@@ -433,12 +588,16 @@ const Home = () => {
                   {/* front of the card */}
                   <div className="card-side card-front">
                     <img src={Blog3} alt="Blog-3" />
-                    <h4>React Component Patterns</h4>
-                    <p>The trade-offs of the different React patterns allow for more useful and reusable code by adhering to design principles.</p>
-                    <div className="card-footer">
-                      <img src={Avatar} alt="avatar"/>
-                      <p>7 min read</p>
+
+                    <div className='blog-info'>
+                        <h4>React Component Patterns</h4>
+                        <p>The trade-offs of the different React patterns allow for more useful and reusable code by adhering to design principles.</p>
+                        <div className="card-footer">
+                          <img src={Avatar} alt="avatar"/>
+                          <p>7 min read</p>
+                        </div>
                     </div>
+
                   </div>
                   {/* card back */}
                   <div className="card-side card-back">
@@ -446,26 +605,11 @@ const Home = () => {
                   </div>  
                 </div>
                 {/* end of single article */}
-                {/* single article */}
-                <div className="card">
-                  {/* front of the card */}
-                  <div className="card-side card-front">
-                    <img src={Blog4} alt="blog-4" />
-                    <h4>Django RESTful APIs using Dj-Rest-Auth</h4>
-                    <p>Authentication with dj-rest-auth in a Django REST framework API for Sign-up, Sign in and Sign out, password change and password reset features. 
-</p>
-                    <div className="card-footer">
-                      <img src={Avatar} alt="avatar"/>
-                      <p>7 min read</p>
-                    </div>
-                  </div>
-                  {/* card back */}
-                  <div className="card-side card-back">
-                    <button className="btn">read more</button>
-                  </div>  
-                </div>
-                {/* end of single article */}
-              </div>
+
+              </div>                
+              <Link to="/blogs" className="btn center-btn">
+                  Blogs
+              </Link>
         </div>
         {/*end of  blog */}
         {/* footer */}
