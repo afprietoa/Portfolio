@@ -3,7 +3,7 @@ import Blog2 from '../assets/images/blog-2.jpg'
 import Blog3 from '../assets/images/blog-3.jpg'
 import Blog4 from '../assets/images/blog-4.jpg'
 import Blog5 from '../assets/images/blog-5.jpg'
-import Blog6 from '../assets/images/blog-6.jpg'
+import Blog6 from '../assets/images/blog-6.png'
 import Blog7 from '../assets/images/blog-7.jpg'
 export const blogList = [
   {
