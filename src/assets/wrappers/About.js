@@ -20,11 +20,11 @@ About Page
     color: var(--clr-primary-5);
   }
 .about-page {
-    padding: 5rem 0;
+    padding: 2.5rem 0 5rem 0;
   }
-  .about-img {
-    margin-bottom: 2rem;
-    height: 25rem;
+  .innova-logo-about{
+    height: 10rem;
+    width: 30rem;
   }
   .about-text .section-title {
     margin-bottom: 2rem;

@@ -28,6 +28,9 @@ const Navbar = () => {
                 <a href="#" onClick={() => {navigate("/projects")}}>projects</a>
               </li>
               <li>
+                <a href="#" onClick={() => {navigate("/blog")}}>blog</a>
+              </li>
+              <li>
                 <a href="#" onClick={() => {navigate("/contact")}}>contact</a>
               </li>
             </ul>

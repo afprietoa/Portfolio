@@ -36,7 +36,18 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-grey-11: #f1f5f8;
-  --clr-grey-12: #617d98;;
+  --clr-grey-12: #617d98;
+/* grey */
+--grey-50: #f8fafc;
+--grey-100: #f1f5f9;
+--grey-200: #e2e8f0;
+--grey-300: #cbd5e1;
+--grey-400: #94a3b8;
+--grey-500: #64748b;
+--grey-600: #475569;
+--grey-700: #334155;
+--grey-800: #1e293b;
+--grey-900: #0f172a;
   --clr-white: #fff;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
@@ -45,6 +56,13 @@ Variables
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --max-width: 1170px;
 }
 /*

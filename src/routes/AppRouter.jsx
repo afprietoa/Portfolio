@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import'react-toastify/dist/ReactToastify.css';
-import {About, Blog, Contact, Projects, Home} from './../pages';
+import {About, Blog, Contact, Projects, Home, Post} from './../pages';
 
 
     const AppRouter = () => {
@@ -12,6 +12,7 @@ import {About, Blog, Contact, Projects, Home} from './../pages';
             <BrowserRouter>
               <Routes>
                 <Route path='blog' element={<Blog/>}/>
+                <Route path="/post/:id" element={<Post />}/>
                 <Route path='about' element={<About/>}/>
                 <Route path='projects' element={<Projects/>}/>
                 <Route path="contact" element={<Contact />} />

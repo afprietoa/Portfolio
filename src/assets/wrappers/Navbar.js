@@ -53,7 +53,7 @@ Navbar
     }
     .nav-links{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         justify-content: center;
         column-gap: 2rem;
 

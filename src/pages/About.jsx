@@ -1,12 +1,13 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/About'
 import { Footer, Navbar, Sidebar } from '../components'
+import InnovaLogo from '../assets/images/innovaLogo2.png'
 const abouts = {
   image: "https://www.formpl.us/static/images/features/personalize.svg",
-  title: "InnovaTIC",
-  info: "Salvia tousled chambray, shoreditch retro cliche dreamcatcher coloring book roof party keffiyeh small batch pork belly actually mlkshk shaman. Stumptown typewriter you probably haven't heard of them pork belly dreamcatcher umami woke, chambray snackwave craft beer. You probably haven't heard of them slow-carb trust fund thundercats bespoke live-edge forage echo park artisan coloring book. Semiotics af tumblr, health goth viral iPhone cold-pressed ugh kogi fanny pack. Photo booth 3 wolf moon narwhal, marfa lumbersexual taiyaki biodiesel cloud bread slow-carb enamel pin stumptown taxidermy food truck 8-bit mustache. Pickled next level vaporware, brooklyn af sriracha hoodie try-hard flannel slow-carb raw denim.",
+  title: "InnovaTECH",
+  info: "Discover the difference with InnovaTIC Business Solutions. As a freelance consultant, I bring more than just technological expertise; I combine the synergy of brilliant minds with extensive experience in the tech industry. At InnovaTIC, I merge the knowledge and vision of professionals who have made significant impacts in the tech industry to offer you tailored business solutions. From web design to mobile applications and data visualization, I am here to drive your business towards success. Partner with me and let your business shine with innovation and excellence.",
   stack: [
-    "HTML", "CSS", "JAVASCRIPT", "REACT.JS", "NODE.JS", "GATSBY.JS"
+    "REACT.JS", "ANGULAR", "VUE.JS", "SPRING", "ASP.NET", "DJANGO"
   ]
 };
 const About = () => {
@@ -28,9 +29,10 @@ const About = () => {
         </header>
           {/* end of section title */}
           <div className="section-center about-center about-page">
-        <img src={abouts.image} alt="About" className="about-img" />
+        <img src={InnovaLogo} alt="About" className="about-img" />
         <article className="about-text">
-          <h1>Innova<span className="hero-title-mod">TIC</span></h1>
+        <h3><span className="hero-title-mod">Self</span> Summary</h3>
+          <h2>What is INNOVA <span className="hero-title-mod">TECH</span>?</h2>
           <div className="underline"></div>
           <p>{abouts.info}</p>
           <div className="about-stack">

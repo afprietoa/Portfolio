@@ -1,7 +1,43 @@
+import axios from 'axios';
 import React from 'react'
+import { useState } from 'react';
 import Wrapper from '../assets/wrappers/Contact'
 import { Footer, Navbar, Sidebar } from '../components'
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) =>{
+    e.preventDefault();
+  //Service ID, Template ID, and Public Key
+  const serviceId = 'service_k5zdn87';
+  const templateId = 'template_utgw40e';
+  const publicKey = 'q7U4-GS5XqTmcVjwD';
+
+  //Object with Service ID, Template ID, and Public Key
+  const data ={
+    service_id: serviceId,
+    template_id: templateId,
+    user_id: publicKey,
+    template_params:{
+      from_name: name,
+      from_email: email,
+      to_name: 'InnovaTic',
+      message: message,
+    },
+  }
+
+  try{
+    const res = await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
+    console.log(res.data);
+    setName('');
+    setEmail('');
+    setMessage('');
+  }catch(error){
+    console.error(error);
+  }
+}
   return (
     <Wrapper>
         {/* navbar  */}
@@ -32,7 +68,6 @@ const Contact = () => {
               address
             </h4>
             <h4 class="contact-text">
-              CL 12 A# 71C - 21  <br />
               Bogota.DC, Colombia
             </h4>
           </div>
@@ -68,25 +103,31 @@ const Contact = () => {
         {/* contact form */}
         <article class="contact-form">
           <h3>contact us</h3>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div class="form-group">
               {/* inputs */}
               <input
                 type="text"
                 placeholder="name"
                 class="form-control"
+                value={name}
                 name="name"
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
                 placeholder="email"
                 class="form-control"
+                value={email}
                 name="email"
+                onChange={(e) => setEmail(e.target.value)}
               />
               <textarea
                 name="message"
                 placeholder="message"
+                value={message}
                 class="form-control"
+                onChange={(e) => setMessage(e.target.value)}
                 rows="5"
               ></textarea>
             </div>

@@ -11,6 +11,7 @@ Hero
 .hero-img{
   display: none;
 }
+
 .hero{
   background: var(--clr-primary-10);
   .underline{
@@ -347,6 +348,11 @@ Projects
   height: 100%;
   object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
 }
+.projects-text{
+  width: 85vw;
+  max-width: 30rem;
+  margin: 0 auto;
+}
 
 .project-img-wrapper::after {
   content: "";
@@ -459,7 +465,7 @@ Connect
 ===============
 */
 .connects {
-  background: var(--clr-white);
+  background: var(--clr-primary-10);
 }
 .connect {
   text-align: center;
@@ -509,7 +515,79 @@ Connect
     margin-bottom: 0.5rem;
   }
 }
+/*
+=============== 
+Question
+===============
+*/
+.container {
+  width: 90vw;
+  margin: 5rem auto;
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  max-width: 800px;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-3);
 
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--grey-700);
+}
+
+.question {
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.question .underline{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.question p {
+  color: var(--grey-500);
+  line-height: 2;
+  margin-top: 1rem;
+}
+
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.question h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--grey-700);
+}
+
+.question-btn {
+  background: var(--clr-primary-5);
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+  align-self: flex-start;
+  min-width: 2rem;
+  font-size: 1.5rem;
+}
+.timeline-icon-btn{
+  color: var(--clr-white);
+}
 /*
 =============== 
 Timeline
