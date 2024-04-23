@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/About'
 import { Footer, Navbar, Sidebar } from '../components'
-import InnovaLogo from '../assets/images/innovaLogo2.png'
+import InnovaLogo from '../assets/images/InnovaLogo2.png'
 const abouts = {
   image: "https://www.formpl.us/static/images/features/personalize.svg",
   title: "InnovaTECH",
