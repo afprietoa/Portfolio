@@ -214,7 +214,7 @@ const Home = () => {
         </span>
         <h4 class="skill-title">Spring</h4>
         <p class="skill-text">
-        Expert in creating scalable back-end applications with Spring, focusing on modular architecture and seamless data management.
+        Expert in creating scalable back-end applications with Spring, focusing on modular architecture and optimal data management.
         </p>
       </article>
       {/* end of single skill */}

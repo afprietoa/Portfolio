@@ -782,7 +782,7 @@ Using interceptors and guards, Angular developers can create more secure, robust
   {
     id: 7,
     title: 'Optimization of SQL and NoSQL Databases',
-    category: 'art',
+    category: 'database',
     subCategory: ['skill', 'design', 'passion'],
     shortDesc: 'Dive into the critical world of database performance with our latest blog post on "Optimization of SQL and NoSQL Databases." This comprehensive guide offers practical strategies to enhance the performance and efficiency of applications reliant on data transactions.',
     description:
