@@ -5,6 +5,7 @@ import Blog4 from '../assets/images/blog-4.jpg'
 import Blog5 from '../assets/images/blog-5.jpg'
 import Blog6 from '../assets/images/blog-6.png'
 import Blog7 from '../assets/images/blog-7.jpg'
+import Avatar from '../assets/images/author.jpeg'
 export const blogList = [
   {
     id: 1,
@@ -100,7 +101,7 @@ export const blogList = [
       
       `,
     authorName: 'Andres Prieto',
-    authorAvatar: '/src/assets/images/author.jpeg',
+    authorAvatar: Avatar,
     createdAt: 'March 18, 2024',
     cover: Blog1,
   },
@@ -197,7 +198,7 @@ export const blogList = [
       </div>
       `,
     authorName: 'Andres Prieto',
-    authorAvatar: '/src/assets/images/author.jpeg',
+    authorAvatar: Avatar,
     createdAt: 'March 25, 2024',
     cover: Blog2,
   },
@@ -371,7 +372,7 @@ Using interceptors and guards, Angular developers can create more secure, robust
 </div>
 `,
     authorName: 'Andres Prieto',
-    authorAvatar: '/src/assets/images/author.jpeg',
+    authorAvatar: Avatar,
     createdAt: 'April 01, 4',
     cover: Blog3,
   },
@@ -510,7 +511,7 @@ Using interceptors and guards, Angular developers can create more secure, robust
       </div>
       `,
     authorName: 'Andres Prieto',
-    authorAvatar: '/src/assets/images/author.jpeg',
+    authorAvatar: Avatar,
     createdAt: 'April 08, 2024',
     cover: Blog4,
   },
@@ -662,7 +663,7 @@ Using interceptors and guards, Angular developers can create more secure, robust
       </div>
       `,
     authorName: 'Andres Prieto',
-    authorAvatar: '/src/assets/images/author.jpeg',
+    authorAvatar: Avatar,
     createdAt: 'April 15, 2024',
     cover: Blog5,
   },
@@ -774,7 +775,7 @@ Using interceptors and guards, Angular developers can create more secure, robust
       </div>
       `,
     authorName: 'Andres Prieto',
-    authorAvatar: '/src/assets/images/author.jpeg',
+    authorAvatar: Avatar,
     createdAt: 'June 03, 2021',
     cover: Blog6,
   },
@@ -958,7 +959,7 @@ Using interceptors and guards, Angular developers can create more secure, robust
       </div>
       `,
     authorName: 'Andres Prieto',
-    authorAvatar: '/src/assets/images/author.jpeg',
+    authorAvatar: Avatar,
     createdAt: 'April 22, 2024',
     cover: Blog7,
   },
