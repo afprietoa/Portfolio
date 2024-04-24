@@ -4,10 +4,9 @@ import Hero from '../assets/images/heroImg.png'
 import InnovaLogo from '../assets/images/InnovaLogo.png'
 import Avatar from '../assets/images/author.jpeg'
 import About from '../assets/images/aboutImg.png'
-import Project1 from '../assets/images/project-1.png'
-import Project2 from '../assets/images/project-2.png'
-import Project3 from '../assets/images/project-3.png'
-import Project4 from '../assets/images/project-4.png'
+import Cover1 from '../assets/images/cover-1.jpg'
+import Cover2 from '../assets/images/cover-2.jpg'
+import Cover3 from '../assets/images/cover-3.jpg'
 import Blog1 from '../assets/images/blog-1.png'
 import Blog2 from '../assets/images/blog-2.jpg'
 import Blog3 from '../assets/images/blog-3.jpg'
@@ -18,7 +17,7 @@ import Wrapper from '../assets/wrappers/Home'
 
 const projects = [
   {
-    image: "https://getwallpapers.com/wallpaper/full/c/f/1/490921.jpg",
+    image: Cover1,
     title: "WEB PROJECTS",
     description: "Proficient in cutting-edge web technologies including Angular, Vue, React, Spring, ASP.NET, and Django, I specialize in crafting dynamic and responsive web applications. My focus lies in delivering user-centric designs that prioritize both functionality and aesthetic appeal. With a keen eye for performance optimization and cross-platform compatibility, I strive to create web experiences that captivate users and drive engagement.",
     stacks: ["ANGULAR", "VUE", "REACT", "SPRING", "ASP.NET", "DJANGO"],
@@ -26,7 +25,7 @@ const projects = [
     url: "#"
   },
   {
-    image: "https://getwallpapers.com/wallpaper/full/f/3/d/489195.jpg",
+    image: Cover2,
     title: "MOBILE PROJECTS",
     description: "Experienced in Android development, I create mobile applications that are not only sleek and functional but also optimized for performance and compatibility. My applications enhance mobile accessibility and user retention, focusing on crafting superior mobile experiences that cater to modern consumer needs.",
     stacks: ["KOTLIN", "JAVA", "FLUTTER"],
@@ -34,7 +33,7 @@ const projects = [
     url: "#"
   },
   {
-    image: "https://getwallpapers.com/wallpaper/full/e/a/b/489560.jpg",
+    image: Cover3,
     title: "DESKTOP PROJECTS",
     description: "With a comprehensive understanding of desktop application architecture, I design and implement software solutions that are both powerful and user-centric. My expertise includes developing applications for Windows and cross-platform environments that integrate seamlessly with various hardware and software systems.",
     stacks: ["C#", "JAVA"],
