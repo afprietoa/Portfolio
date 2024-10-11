@@ -4,6 +4,10 @@ import Project1 from '../assets/images/project-1.png'
 import Project2 from '../assets/images/project-2.png'
 import Project3 from '../assets/images/project-3.png'
 import Project4 from '../assets/images/project-4.png'
+import Project5 from '../assets/images/project-5.png'
+import Project6 from '../assets/images/project-6.png'
+import Project7 from '../assets/images/project-7.png'
+import Project8 from '../assets/images/project-8.png'
 import { Footer, Navbar, Sidebar } from '../components'
 const Projects = () => {
   return (
@@ -109,6 +113,94 @@ const Projects = () => {
               <i className="fab fa-github"></i>
             </span>
             <a href="https://github.com/afprietoa/fe_library-system">source code</a>
+          </div>
+        </div>
+      </article>
+      {/* end of single project */}
+            {/* single project */}
+            <article className="single-project">
+        <div className="project-container">
+          <img src={Project5} alt="project-5" />
+          <a href="" className="project-icon">
+          <i class="fas fa-comments"></i>
+          </a>
+        </div>
+        <div className="project-details">
+          <h4>ChatVerse App</h4>
+          <p>
+          A modern communication platform designed to streamline your interactions. Connect with friends, manage chats, and personalize your experience in an intuitive and user-friendly environment.
+          </p>
+          <div className="project-footer">
+            <span>
+              <i className="fab fa-github"></i>
+            </span>
+            <a href="https://github.com/afprietoa/amn-ChatVerse_app_MVP">source code</a>
+          </div>
+        </div>
+      </article>
+      {/* end of single project */}
+            {/* single project */}
+            <article className="single-project">
+        <div className="project-container">
+          <img src={Project6} alt="project-6" />
+          <a href="" className="project-icon">
+          <i class="fas fa-calendar-day"></i>
+          </a>
+        </div>
+        <div className="project-details">
+          <h4>Classroom Scheduler</h4>
+          <p>
+          A scheduling tool that displays weekly activities for physical spaces or mobile classrooms, with options to view available rooms, filter results, generate usage reports, and manage activities based on user permissions.
+          </p>
+          <div className="project-footer">
+            <span>
+              <i className="fab fa-github"></i>
+            </span>
+            <a href="https://github.com/afprietoa/">source code</a>
+          </div>
+        </div>
+      </article>
+      {/* end of single project */}
+            {/* single project */}
+            <article className="single-project">
+        <div className="project-container">
+          <img src={Project7} alt="project-7" />
+          <a href="" className="project-icon">
+          <i class="fas fa-store"></i>
+          </a>
+        </div>
+        <div className="project-details">
+          <h4>PanPan App</h4>
+          <p>
+          A management tool for tracking product prices and stock, creating new products, and handling customer orders. It also allows customers to browse products and manage their purchases.
+          </p>
+          <div className="project-footer">
+            <span>
+              <i className="fab fa-github"></i>
+            </span>
+            <a href="https://github.com/afprietoa/amn-Panpan_app_MVVM">source code</a>
+          </div>
+        </div>
+      </article>
+      {/* end of single project */}
+            {/* single project */}
+            <article className="single-project">
+        <div className="project-container">
+          <img src={Project8} alt="project-8" />
+          <a href="" className="project-icon">
+          <i class="fas fa-graduation-cap"></i>
+          </a>
+        </div>
+        <div className="project-details">
+          <h4>Free Courses</h4>
+          <p>
+          An interactive platform for managing free courses offered by the Faculty of Economic Sciences, allowing users to register, create, and manage courses, and access historical data on courses, grades, and instructors.
+          </p>
+          <div className="project-footer">
+            <span>
+              <i className="fab fa-github"></i>
+            </span>
+            <a href="https://github.com/afprietoa/">source code</a>
           </div>
         </div>
       </article>

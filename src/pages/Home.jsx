@@ -47,7 +47,7 @@ const jobs = [
   {
     company: "UIFCE",
     position: "Jr. Web Developer",
-    date: "February 2024 - Present",
+    date: "February 2024 - September 2024",
     desc: [
       "Provide technological support and code maintenance at both Backend and Frontend levels.",
       "Participate in the full web application development cycle using Angular, Spring Boot, PostgreSQL.",
